@@ -1,2 +1,26 @@
-*.sqlite3
+# ######################
+# Python stuff
+# ######################
 __pycache__/
+
+# SQLite database
+*.sqlite3
+
+# Environment variables
+.env
+
+
+
+# ######################
+# Editors
+# ######################
+
+# JetBrains
+.idea/
+
+# VSCode
+.vscode/
+
+
+# MacOS
+.DS_Store
