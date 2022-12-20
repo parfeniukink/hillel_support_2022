@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "exchange_rates",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,12 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 
+# Set custom user model
+AUTH_USER_MODEL = "users.User"
+
+
 # Exchange rates service (Alpha Vantage)
-ALPHA_VANTAGE_BASE_URL = getenv("ALPHA_VANTAGE_BASE_URL", default="https://www.alphavantage.co")
+ALPHA_VANTAGE_BASE_URL = getenv(
+    "ALPHA_VANTAGE_BASE_URL", default="https://www.alphavantage.co"
+)
 ALPHA_VANTAGE_API_KEY = getenv("ALPHA_VANTAGE_API_KEY")
