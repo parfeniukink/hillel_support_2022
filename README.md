@@ -3,6 +3,17 @@
 
 ## Adjust the application
 
+### Create `.env` file based on `.env.default`
+```bash
+# Unix
+cp .env.default .env
+
+# Windows
+# ...
+```
+
+
+
 ### Install deps
 
 ```bash

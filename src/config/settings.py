@@ -1,9 +1,8 @@
-from os import getenv
+from os import getenv, environ
 from pathlib import Path
 
 SRC_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = SRC_DIR.parent
-
 
 SECRET_KEY = getenv("DJANGO_SECRET_KEY", default="INVALID")
 DEBUG = getenv("DJANGO_DEBUG", default=False)
